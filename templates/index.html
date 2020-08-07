@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Gitabitan Admin</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Admin panel - Gitabitan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('add_page') }}">Add <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('delete_page') }}">Remove</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Update</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div style="padding-top: 100px; "></div>
+
+      <div class="card" style="
+      margin:auto;
+      width:50%;">
+      <img src="../static/card-img.jpg" style="width:100%; padding: 1px ;">
+      <!-- <img src="{{ url_for('static',filename='card-img.jpg') }}" style="width:100%; padding: 1px ;"> -->
+
+      <div style="
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 40px;
+      padding-right: 40px;">
+      
+      <form method="POST" action = "http://127.0.0.1:5000/result">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Database reference</label>
+            <input type="text" class="form-control" id="c_id" name="db_ref" placeholder="Ex: Songlist">          </div>
+
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Child ID</label>
+          <input type="text" class="form-control" id="c_id" name="c_id" placeholder="1 , 2 , 3">
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Number</label>
+          <input type="text" class="form-control" id="c_id" name="num">        
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Letter</label>
+            <input type="text" class="form-control" id="c_id" name="letter">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Title</label>
+            <input type="text" class="form-control" id="c_id" name="title">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Lyric</label>
+            <input type="text" class="form-control" id="c_id" name="lyric">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Porjay</label>
+            <input type="text" class="form-control" id="c_id" name="porjay">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Upo-Porjay</label>
+            <input type="text" class="form-control" id="c_id" name="upo_porjay">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Song Number</label>
+            <input type="text" class="form-control" id="c_id" name="song_num">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Taal</label>
+            <input type="text" class="form-control" id="c_id" name="taal">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Raag</label>
+            <input type="text" class="form-control" id="c_id" name="raag">       
+          </div>
+
+          
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Bengali written year</label>
+            <input type="text" class="form-control" id="c_id" name="bn">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">English written year</label>
+            <input type="text" class="form-control" id="c_id" name="eng">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Age</label>
+            <input type="text" class="form-control" id="c_id" name="age">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Wrtting place</label>
+            <input type="text" class="form-control" id="c_id" name="place">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Publish date</label>
+            <input type="text" class="form-control" id="c_id" name="date">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Notation Info</label>
+            <input type="text" class="form-control" id="c_id" name="not_info">       
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Notation Writer</label>
+            <input type="text" class="form-control" id="c_id" name="writer">       
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Footnote</label>
+            <input type="text" class="form-control" id="c_id" name="foot_note">       
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Lyrical Change</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="lyrical_change"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label >Discussion</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"name="disc"></textarea>      
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Notation File</label>
+            <input type="text" class="form-control" id="c_id" name="not_file">        
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Notation Url</label>
+            <input type="text" class="form-control" id="c_id" name="url">       
+          </div>
+
+          <button class="btn btn-secondary btn-lg btn-block" type="submit" style="background-color: #EF9A9A; border-radius: 30px!important; color: black;">Submit</button>
+      </form>
+
+     
+
+      </div>
+      </div>
+
+      <div style="padding-top: 100px; "></div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+
+
+</body>
+</html>
